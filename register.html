@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retromerch eShop - Compte</title>
+    <link rel="stylesheet" href="connexion.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="profil.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Retromerch</h1>
+            <h6>All your old memories</h6>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="jeux.html">Shop</a></li>
+                <li><a href="offres.html">Offres</a></li>
+                <li><a href="register.html">Inscription/Connexion</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="account">
+            <h2>Inscription</h2>
+            <form action="#" method="post" id="registrationForm">
+                <div class="form-group">
+                    <label for="email">E-mail</label>
+                    <input type="text" id="email" name="email">
+                </div>
+                <div class="form-group">
+                    <label for="username">Nom d'utilisateur</label>
+                    <input type="text" id="username" name="username">
+                </div>
+                <div class="form-group">
+                    <label for="password">Mot de passe</label>
+                    <input type="password" id="password" name="password">
+                </div>
+                <div class="form-group">
+                    <label for="confirm_password">Confirmez le mot de passe</label>
+                    <input type="password" id="confirm_password" name="confirm_password">
+                </div>
+                <button type="button" onclick="redirectToHome()">S'inscrire</button>
+            </form>
+            <p><a href="connexion.html">Déjà inscrit ?</a></p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Retromerch. Tous droits réservés.</p>
+    </footer>
+    <script>
+        function redirectToHome() {
+            window.location.href = 'index.html';
+        }
+    </script>
+</body>
+</html>

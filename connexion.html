@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retromerch eShop - Compte</title>
+    <link rel="stylesheet" href="connexion.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="profil.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <h1>Retromerch</h1>
+            <h6>All your old memories</h6>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="jeux.html">Shop</a></li>
+                <li><a href="offres.html">Offres</a></li>
+                <li><a href="register.html">Inscription/Connexion</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="account">
+            <h2>Connexion</h2>
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="username">E-mail</label>
+                    <input type="text" id="username" name="username">
+                </div>
+                <div class="form-group">
+                    <label for="password">Mot de passe</label>
+                    <input type="password" id="password" name="password">
+                </div>
+                <button type="button" onclick="redirectToHome()">Se connecter</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Retromerch. Tous droits réservés.</p>
+    </footer>
+    <script>
+        function redirectToHome() {
+            window.location.href = 'index.html';
+        }
+    </script>
+</body>
+
+</html>

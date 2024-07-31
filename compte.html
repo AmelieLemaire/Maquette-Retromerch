@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Compte - Retromerch eShop</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="profil.css">
+    <link rel="stylesheet" href="compte.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Retromerch</h1>
+            <h6>All your old memories</h6>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="jeux.html">Shop</a></li>
+                <li><a href="offres.html">Offres</a></li>
+                <li><a href="compte.html">Compte</a></li>
+            </ul>
+        </nav>
+        <div class="profile-menu">
+            <img src="image.png" alt="Profil" class="profile-pic">
+            <div class="dropdown-content">
+                <div class="cart">
+                    <h3>Panier</h3>
+                    <ul>
+                        <li>Article 1 - 20€</li>
+                        <li>Article 2 - 15€</li>
+                        <li>Article 3 - 30€</li>
+                    </ul>
+                    <a href="panier.html">Voir le panier</a>
+                </div>
+                <a href="admin.html">Administrateur</a>
+                <a href="index-disconnected.html">Déconnexion</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <h2>Mon Compte</h2>
+        <div class="account-container">
+            <div class="account-info">
+                <h3>Informations du Compte</h3>
+                <p><strong>Nom:</strong> Jean Dupont</p>
+                <p><strong>Email:</strong> jeandupont@example.com</p>
+                <p><strong>Adresse:</strong> 123 Rue Exemple, 75001 Paris, France</p>
+                <p><strong>Téléphone:</strong> 0123456789</p>
+            </div>
+            <div class="account-update">
+                <h3>Mettre à Jour les Informations</h3>
+                <form action="update-account.html" method="post">
+                    <label for="name">Nom:</label>
+                    <input type="text" id="name" name="name" value="Jean Dupont" required>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" value="jeandupont@example.com" required>
+                    
+                    <label for="address">Adresse:</label>
+                    <input type="text" id="address" name="address" value="123 Rue Exemple, 75001 Paris, France" required>
+                    
+                    <label for="phone">Téléphone:</label>
+                    <input type="tel" id="phone" name="phone" value="0123456789" required>
+                    
+                    <label for="current-password">Mot de Passe Actuel:</label>
+                    <input type="password" id="current-password" name="current-password" required>
+                    
+                    <label for="new-password">Nouveau Mot de Passe:</label>
+                    <input type="password" id="new-password" name="new-password">
+                    
+                    <label for="confirm-password">Confirmer le Nouveau Mot de Passe:</label>
+                    <input type="password" id="confirm-password" name="confirm-password">
+                    
+                    <button type="submit" class="update-btn">Mettre à Jour</button>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Retromerch. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>

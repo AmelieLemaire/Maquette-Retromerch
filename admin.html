@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administration - Retromerch eShop</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="profil.css">
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Retromerch</h1>
+            <h6>All your old memories</h6>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="jeux.html">Shop</a></li>
+                <li><a href="offres.html">Offres</a></li>
+                <li><a href="compte.html">Compte</a></li>
+            </ul>
+        </nav>
+        <div class="profile-menu">
+            <img src="image.png" alt="Profil" class="profile-pic">
+            <div class="dropdown-content">
+                <div class="cart">
+                    <h3>Panier</h3>
+                    <ul>
+                        <li>Mario - 10€</li>
+                        <li>Zelda - 20€</li>
+                        <li>Metroid - 30€</li>
+                    </ul>
+                    <a href="panier.html">Voir le panier</a>
+                </div>
+                <a href="admin.html">Administrateur</a>
+                <a href="index-disconnected.html">Déconnexion</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <h2>Gestion des Articles</h2>
+        <div class="crud-nav">
+            <button class="crud-btn" onclick="showForm('create')">Créer</button>
+            <button class="crud-btn" onclick="showForm('read')">Voir</button>
+            <button class="crud-btn" onclick="showForm('update')">Mettre à jour</button>
+            <button class="crud-btn" onclick="showForm('delete')">Supprimer</button>
+        </div>
+        <div class="crud-forms">
+            <form id="create" class="crud-form">
+                <h3>Créer un Article</h3>
+                <label for="create-name">Nom:</label>
+                <input type="text" id="create-name" name="name">
+                <label for="create-image">Image:</label>
+                <input type="file" id="create-image" name="image">
+                <label for="create-description">Description:</label>
+                <textarea id="create-description" name="description"></textarea>
+                <label for="create-price">Prix:</label>
+                <input type="text" id="create-price" name="price">
+                <label for="create-weight">Poids:</label>
+                <input type="text" id="create-weight" name="weight">
+                <label for="create-size">Taille:</label>
+                <input type="text" id="create-size" name="size">
+                <label for="create-origin">Provenance:</label>
+                <input type="text" id="create-origin" name="origin">
+                <label for="create-date">Date:</label>
+                <input type="date" id="create-date" name="date">
+                <label for="create-color">Couleur:</label>
+                <input type="text" id="create-color" name="color">
+                <label for="create-condition">État:</label>
+                <input type="text" id="create-condition" name="condition">
+                <label for="create-stock">Stock:</label>
+                <input type="text" id="create-stock" name="stock">
+                <button type="submit">Créer</button>
+            </form>
+            <form id="read" class="crud-form">
+                <h3>Voir un Article</h3>
+                <label for="read-id">ID de l'article:</label>
+                <input type="text" id="read-id" name="id">
+                <button type="submit">Lire</button>
+            </form>
+            <form id="update" class="crud-form">
+                <h3>Mettre à jour un Article</h3>
+                <label for="update-id">ID de l'article:</label>
+                <input type="text" id="update-id" name="id">
+                <label for="update-name">Nom:</label>
+                <input type="text" id="update-name" name="name">
+                <label for="update-image">Image:</label>
+                <input type="file" id="update-image" name="image">
+                <label for="update-description">Description:</label>
+                <textarea id="update-description" name="description"></textarea>
+                <label for="update-price">Prix:</label>
+                <input type="text" id="update-price" name="price">
+                <label for="update-weight">Poids:</label>
+                <input type="text" id="update-weight" name="weight">
+                <label for="update-size">Taille:</label>
+                <input type="text" id="update-size" name="size">
+                <label for="update-origin">Provenance:</label>
+                <input type="text" id="update-origin" name="origin">
+                <label for="update-date">Date:</label>
+                <input type="date" id="update-date" name="date">
+                <label for="update-color">Couleur:</label>
+                <input type="text" id="update-color" name="color">
+                <label for="update-condition">État:</label>
+                <input type="text" id="update-condition" name="condition">
+                <label for="update-stock">Stock:</label>
+                <input type="text" id="update-stock" name="stock">
+                <button type="submit">Mettre à jour</button>
+            </form>
+            <form id="delete" class="crud-form">
+                <h3>Supprimer un Article</h3>
+                <label for="delete-id">ID de l'article:</label>
+                <input type="text" id="delete-id" name="id">
+                <button type="submit">Supprimer</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Retromerch. Tous droits réservés.</p>
+    </footer>
+    <script src="admin.js"></script>
+</body>
+</html>

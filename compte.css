@@ -1,0 +1,67 @@
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h2 {
+    color: #bb0000;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.account-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.account-info, .account-update {
+    flex: 1;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.account-info h3, .account-update h3 {
+    margin-top: 0;
+}
+
+.account-info p {
+    margin: 10px 0;
+}
+
+.account-update label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.account-update input[type="text"],
+.account-update input[type="email"],
+.account-update input[type="tel"],
+.account-update input[type="password"] {
+    width: 93%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.update-btn {
+    background-color: #bb0000;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    display: block;
+    width: 100%;
+}
+
+.update-btn:hover {
+    background-color: #a00000;
+}
