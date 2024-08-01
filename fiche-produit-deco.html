@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retromerch eShop - Fiche Produit</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="produit.css">
+    <link rel="stylesheet" href="profil.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Retromerch</h1>
+            <h6>All your old memories</h6>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index-disconnected.html">Accueil</a></li>
+                <li><a href="jeux-deco.html">Shop</a></li>
+                <li><a href="offres-deco.html">Offres</a></li>
+                <li><a href="register.html">Inscription/Connexion</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="product">
+            <div class="product-details">
+                <div class="product-image">
+                    <img src="image-2.png" alt="Nom du produit" id="product-image">
+                </div>
+                <div class="product-info">
+                    <h3>Nom du Produit</h3>
+                    <p class="price">€49.99</p>
+                    <p class="description">
+                        Description détaillée du produit. Ce produit est un excellent choix pour les amateurs de rétro et les collectionneurs. Il offre une qualité exceptionnelle et rappelle de nombreux souvenirs.
+                    </p>
+                    <p class="taille"><strong>Taille :</strong> S</p>
+                    <p class="provenance"><strong>Provenance :</strong> France</p>
+                    <p class="poids"><strong>Poids :</strong> 200g</p>
+                    <p class="date"><strong>Date :</strong> 2023</p>
+                    <p class="couleur"><strong>Couleur :</strong> Rouge</p>
+                    <p class="etat"><strong>État :</strong> Neuf</p>
+                    <p class="stock"><strong>Stock :</strong> Disponible</p>
+                </div>
+            </div>
+            <div class="product-reviews">
+                <h3>Commentaires et Notes</h3>
+                <div class="rating-summary">
+                    <p><strong>Note moyenne :</strong> 4.5/5</p>
+                    <p>5 étoiles: 10</p>
+                    <p>4 étoiles: 5</p>
+                    <p>3 étoiles: 2</p>
+                    <p>2 étoiles: 1</p>
+                    <p>1 étoile: 0</p>
+                </div>
+                <div class="review">
+                    <p><strong>Utilisateur 1</strong> (5 étoiles)</p>
+                    <p>Excellent produit, très satisfait !</p>
+                </div>
+                <div class="review">
+                    <p><strong>Utilisateur 2</strong> (4 étoiles)</p>
+                    <p>Bon produit, mais la livraison a pris du temps.</p>
+                </div>
+            </div>
+        </section>
+        <div id="overlay" onclick="hideOverlay()">
+            <img src="image.png" alt="Agrandissement" id="overlay-image">
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Retromerch. Tous droits réservés.</p>
+    </footer>
+    <script>
+        document.getElementById('product-image').onclick = function() {
+            document.getElementById('overlay').style.display = 'flex';
+        }
+
+        function hideOverlay() {
+            document.getElementById('overlay').style.display = 'none';
+        }
+    </script>
+</body>
+</html>

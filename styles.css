@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
     height: 100%;
     margin: 0;
 }
@@ -23,6 +24,11 @@ header .logo h1 {
     margin: 0;
     font-size: 24px;
     font-family: 'Press Start 2P', cursive;
+}
+
+.fiche-produit {
+    text-decoration: none;
+    color: #333;
 }
 
 h6 {
@@ -58,14 +64,14 @@ main {
     margin: 0 auto;
     background-color: #fff;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 section {
     margin-bottom: 40px;
 }
 
-.highlight h2, .deals h2, .offers h2 {
+h2 {
     color: #bb0000;
     border-bottom: 2px solid #d4af37;
     padding-bottom: 5px;
@@ -86,7 +92,7 @@ section {
     border-radius: 5px;
     text-align: center;
     width: 200px;
-    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
 .game img {
