@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nintendo eShop Famicom Style</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="sidebar">
+            <ul>
+                <li><a href="#" class="nav-link" data-category="bricks">Bricks</a></li>
+                <li><a href="#" class="nav-link" data-category="home">Home</a></li>
+                <li><a href="#" class="nav-link" data-category="new">New</a></li>
+                <li><a href="#" class="nav-link" data-category="deals">Deals</a></li>
+                <li><a href="#" class="nav-link" data-category="console">Console</a></li>
+                <li><a href="#" class="nav-link" data-category="search">Search</a></li>
+                <li><a href="#" class="nav-link" data-category="all">All</a></li>
+            </ul>
+        </nav>
+        <main class="content">
+            <header>
+                <div class="logo">
+                    <h1>Retromerch</h1>
+                    <h6>All your old memories</h6>
+                </div>
+                <div id="entete">
+                     <div class="cart-icon">
+                    <img src="panier.png" alt="Cart" class="cart-pic">
+                    <div class="cart-summary">
+                        <p>Item 1: 29,99 €</p>
+                        <p>Item 2: 15,00 €</p>
+                        <p>Total: 44,99 €</p>
+                        <a href="checkout.html" class="checkout-button">Checkout</a>
+                    </div>
+                </div>
+                <div class="profile-menu">
+                    <img src="image.png" alt="Profile" class="profile-pic">
+                    <div class="dropdown-content">
+                        <div class="cart">
+                            <a href="#">Account</a>
+                            <a href="#">Admin</a>
+                            <a href="#">Logout</a>
+                        </div>
+                    </div>
+                </div>
+                </div>
+               
+            </header>
+            <div class="content-wrapper">
+                <h2 class="category-title">Bricks</h2>
+                <section class="game-section">
+                    <div class="game-grid"></div>
+                    <div class="pagination"></div>
+                </section>
+            </div>
+            <footer>
+                <p>&copy; 2024 Retromerch. Tous droits réservés.</p>
+            </footer>
+        </main>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
